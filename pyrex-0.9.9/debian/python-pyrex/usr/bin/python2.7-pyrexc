@@ -1,0 +1,7 @@
+#! /bin/sh
+if which python2.7 > /dev/null; then
+  exec python2.7 -c 'from Pyrex.Compiler.Main import main; main(command_line = 1)' $*
+else
+  echo python2.7 not found
+  exit 1
+fi

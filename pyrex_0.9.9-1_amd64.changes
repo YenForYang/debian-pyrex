@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Thu, 01 Sep 2016 12:04:51 +0200
+Source: pyrex
+Binary: python-pyrex pyrex-mode
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: all
+Version: 0.9.9-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Paul Brossier <piem@debian.org>
+Changed-By: Paul Brossier <piem@debian.org>
+Description:
+ pyrex-mode - emacs-lisp pyrex-mode for pyrex
+ python-pyrex - compile native-code modules for Python from Python-like syntax
+Closes: 582561 604965 610386 616980 648800 668804 831938
+Changes:
+ pyrex (0.9.9-1) unstable; urgency=medium
+ .
+   * New upstream release (closes: #582561, #610386)
+   * Bump debian/compat to 7
+   * Acknowledge NMU (Closes: #616980)
+   * debian/compat: bump from 5 to 9
+   * debian/patches: removed, integrated upstream
+   * debian/control: add X-Python-Version, remove dpatch, add dh-python
+   * debian/control: bump Standards-Version to 3.9.8, strip trailing space
+   * debian/rules: update (closes: #668804, #831938), strip trailing spaces
+   * debian/control: add python-dev to depends (closes: #648800)
+   * debian/patches/baseexception.patch: add patch from ubuntu, thanks to
+     Michael Vogt (closes: #604965)
+Checksums-Sha1:
+ f7bf7d2068918ea213b5fcd3be16d0df63fc9d14 25728 pyrex-mode_0.9.9-1_all.deb
+ 32c496f4cf60d12cd1be282cc706c031ea230a18 6654 pyrex_0.9.9-1_amd64.buildinfo
+ 67478fab3eef0e6e6d1e794ab633d813c898a382 142232 python-pyrex_0.9.9-1_all.deb
+Checksums-Sha256:
+ d278f675feda7f8978b6c80f8ec9f3736607d0e068479479ffed4d0d4bdafe0b 25728 pyrex-mode_0.9.9-1_all.deb
+ c1a28ad4e6248bb4b82fea2123216e467627c8c7f140b5e745e86210dd9e9425 6654 pyrex_0.9.9-1_amd64.buildinfo
+ a3c1604ba62131e23718b7cce72aa842365b4eafa345dc441e72b0845f6e8083 142232 python-pyrex_0.9.9-1_all.deb
+Files:
+ a303df4a2810ea40492f68d5a3701c9b 25728 python optional pyrex-mode_0.9.9-1_all.deb
+ 24ba697665fb32c8b1a85385c9d8b1aa 6654 python optional pyrex_0.9.9-1_amd64.buildinfo
+ 652c6507f703a1fea41dacfb5764c6ee 142232 python optional python-pyrex_0.9.9-1_all.deb

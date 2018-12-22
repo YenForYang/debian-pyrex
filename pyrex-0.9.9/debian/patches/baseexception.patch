@@ -1,0 +1,24 @@
+--- pyrex-0.9.8.5~/Pyrex/Plex/Errors.py  2003-07-08 18:35:31.000000000 +1000
++++ pyrex-0.9.8.5/Pyrex/Plex/Errors.py 2009-05-24 00:53:54.000000000 +1000
+@@ -9,7 +9,7 @@
+ import exceptions
+ 
+ class PlexError(exceptions.Exception):
+-  message = ""
++  pass
+ 
+ class PlexTypeError(PlexError, TypeError):
+   pass
+@@ -29,10 +29,10 @@
+   pass
+ 
+ class AmbiguousAction(PlexError):
+-  message = "Two tokens with different actions can match the same string"
+ 
+   def __init__(self):
+-    pass
++    PlexError.__init__(self, "Two tokens with different actions can match the same string")
++
+ 
+ class UnrecognizedInput(PlexError):
+   scanner = None
